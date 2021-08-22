@@ -1,0 +1,162 @@
+@viewport {
+    width: device-width;
+}
+
+body {
+    background-color: #e6ffff;
+}
+
+.centered_calc {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.calc_card {
+    top: 20px;
+    width: 300px;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+    background: #1a1a1a;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px 3px #3d3d3d, -2px -2px 6px 3px #3d3d3d;
+}
+
+#display {
+    position: relative;
+    width: 70%;
+    outline: none;
+    border: 1px rgb(94, 94, 94) solid;
+    border-radius: 5px;
+    background: grey;
+    text-align: right;
+    margin: 10px 10px 10px 0px;
+    padding: 0px 5px 5px 40px;
+    font-size: 30px;
+    color: #222121;
+    box-shadow: inset 1px 1px 1px 1px #a09f9f, inset -1px -1px 1px 1px #a09f9f;
+}
+
+.buttons {
+    width: 290px;
+    margin: 0 auto;
+}
+
+button {
+    width: 60px;
+    height: 35px;
+    border: 1px #262626 solid;
+    background-color: #262626;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px 3px 4px 4px;
+    font-size: 20px;
+    color: #fefefe;
+    box-shadow: inset 1px 1px 3px 2px #303030, inset -1px -1px 3px 2px #303030;
+    outline: none;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+button:active {
+    background-color: #222121;
+    border: 1px soild #222121;
+    outline: none;
+}
+
+#equals {
+    width: 90%;
+    border: 1px solid #e68a00;
+    margin: 10px auto 0 0;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    padding: 10px 40px 40px;
+    font-size: 50px;
+    background: #e68a00;
+    color: #fefefe;
+    box-shadow: inset 1px 1px 5px 2px #f1b04d, inset -1px -1px 5px 2px #f1b04d;
+}
+
+#equals:hover {
+    background-color: #f1b04d;
+    box-shadow: inset 1px 1px 5px 2px #f1b04d, inset -1px -1px 5px 2px #f1b04d;
+}
+
+#equals:active {
+    background-color: #e68a00;
+    border: 1px soild #e68a00;
+    outline: none;
+}
+
+.operator {
+    background-color: #800000;
+    text-align: center;
+    color: #fefefe;
+    border: 1px solid #800000;
+    box-shadow: inset 1px 1px 3px 2px #8d0202, inset -1px -1px 3px 2px #8d0202;
+    outline: none;
+}
+
+.operator:hover {
+    background-color: #c00303;
+    box-shadow: inset 1px 1px 4px 2px #c00303, inset -1px -1px 4px 2px #c00303;
+}
+
+.operator:active {
+    background-color: #800000;
+    border: 1px soild #800000;
+    outline: none;
+}
+
+#clear {
+    background-color: #ff0000;
+    text-align: center;
+    color: #fefefe;
+    border: 1px solid #ff0000;
+    box-shadow: inset -1px -1px 3px 2px #fa1313, inset -1px -1px 3px 2px #fa1313;
+    outline: none;
+}
+
+#delete {
+    background-color: #ff0000;
+    text-align: center;
+    color: #fefefe;
+    border: 1px solid #ff0000;
+    box-shadow: inset -1px -1px 3px 2px #fa1313, inset -1px -1px 3px 2px #fa1313;
+    outline: none;
+    height: 50px;
+    margin: 10px;
+}
+
+#clear:hover,
+#delete:hover {
+    background-color: #fc2222;
+    box-shadow: inset 1px 1px 3px 2px #fc2222, inset -1px -1px 3px 2px #fc2222;
+}
+
+#clear:active,
+#delete:active {
+    background-color: #ff0000;
+    border: 1px soild #ff0000;
+    outline: none;
+}
+
+@media screen and (max-width:320px) {
+    html,
+    body {
+        overflow: hidden;
+    }
+    .calc_card {
+        top: -50px;
+        width: 270px;
+    }
+    .buttons {
+        width: 250px;
+    }
+    button {
+        width: 50px;
+    }
+}

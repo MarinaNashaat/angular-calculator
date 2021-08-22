@@ -1,0 +1,33 @@
+<div class="centered_calc">
+    <h1>Angular Calculator</h1>
+    <div class="calc_card">
+        <button id="delete" value="" (click)="clearAll()">C</button>
+        <input id="display" type="text" class="calculator-screen" [value]="currentNumber" disabled />
+        <div class="buttons">
+            <button class="number" id="seven" value="7" (click)="getNumber('7')">7</button>
+            <button class="number" id="eight" value="8" (click)="getNumber('8')">8</button>
+            <button class="number" id="nine" value="9" (click)="getNumber('9')">9</button>
+            <button class="operator" id="divide" value="/" (click)="getOperation('&divide;')">&divide;</button>
+
+            <button class="number" id="four" value="4" (click)="getNumber('4')">4</button>
+            <button class="number" id="five" value="5" (click)="getNumber('5')">5</button>
+            <button class="number" id="six" value="6" (click)="getNumber('6')">6</button>
+            <button class="operator" id="multiply" value="*" (click)="getOperation('&times;')">&times;</button>
+
+
+            <button class="number" id="one" value="1" (click)="getNumber('1')">1</button>
+            <button class="number" id="two" value="2" (click)="getNumber('2')">2</button>
+            <button class="number" id="three" value="3" (click)="getNumber('3')">3</button>
+            <button class="operator" id="subtract" value="-" (click)="getOperation('-')">-</button>
+
+
+            <button class="number" id="zero" value="0" (click)="getNumber('0')">0</button>
+            <button id="decimal" value="." (click)="getDecimal('.')">.</button>
+            <button id="clear" value="" (click)="delete()">AC</button>
+            <button class="operator" id="add" value="+" (click)="getOperation('+')">+</button>
+        </div>
+
+        <button id="equals" value="=" (click)="getAnswer()">=</button>
+
+    </div>
+</div>
